@@ -7,15 +7,18 @@ const isProd = env.MODE == 'prod'
 let apiServer = process.env.API_SERVER
 // 必须以斜杠结尾
 let publicPath = process.env.PUBLIC_PATH || 'http://cdn.deepexi.com/'
+ // http://yapi.52hhx.com/mock/11/
 
 const config = {
   aliIconFont: '',
   env: {
     mock: {
-      '/security': 'http://yapi.demo.qunar.com/mock/9638'
+      '/security': 'http://yapi.demo.qunar.com/mock/9638',
+      '/deep-demo': 'http://yapi.52hhx.com/mock/11/',
     },
     dev: {
-      '/security': 'http://your.dev.server'
+      '/security': 'http://your.dev.server',
+      '/deep-demo': 'http://yapi.52hhx.com/mock/11/',
     }
   }
 }

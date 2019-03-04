@@ -1,1 +1,1 @@
-const baseApi = '/optimus-api/api/v1'
+const baseApi = 'http://yapi.52hhx.com/mock/11/'
